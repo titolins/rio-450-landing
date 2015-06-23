@@ -1,0 +1,119 @@
+body, html {
+	/*background-color: #fff;*/
+	
+}
+
+#header {
+	padding: 0px;
+	margin:0px;
+}
+
+p {
+	text-align: justify;
+	text-justify: inter-word;
+	color: #fff;
+}
+
+.content-container, .footer {
+	padding-right: 10em;
+	padding-left: 10em; 
+	padding-bottom: 5em;
+	width:100%;
+	background-color: #FFF;
+	/*margin-left:4em;
+	margin-right: 4em; */
+}
+
+/*
+#about-container, #artists_container {
+	background-color:  #fff;
+	padding-bottom: 5em;
+	
+}*/
+
+#header {
+	background: url('../imgs/headertentativa1.jpg') no-repeat center fixed;
+	background-size: inherit;
+	min-height: 607px;
+}
+
+
+.fixed-navbar	 {
+	background: url('../imgs/rio\ me\ header.jpg') no-repeat center fixed;
+	background-size:  cover;
+	height: 120px;
+}
+
+/*
+.content-container h1 {
+		color: black;
+}*/
+
+.footer {
+	/*background-color:  #fff; */
+}
+
+.col-shirt {
+	outline: 2px solid #292929;
+	padding: 5px;
+}
+
+.vote-btn {
+	margin-top: 10px;
+	background-color: #304630;
+	max-width: 200px;
+	height: 30px;
+	cursor: pointer;
+	border: 0px;
+}
+
+.vote-btn:hover {
+	background-color: #4D704D;
+	color:white;
+}
+
+.artist-name {
+	max-width: 200px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+
+
+.col-3 {
+	padding-bottom: 10px;
+	outline: 2px solid #292929;
+}
+
+.row {	
+	display: block;
+	margin: 0 auto;
+}
+
+.shirts-row {
+	margin-top: 80px;
+}
+
+#about-container h1 {
+    color: #292929;
+}
+
+.col-title {
+	color: #304630;
+}
+
+p {
+    color: black;
+}
+
+.page_header {
+	padding: 0;
+	margin: 0;
+}
+
+.fixed-navbar-padding {
+	margin-top: 120px;
+}
+
