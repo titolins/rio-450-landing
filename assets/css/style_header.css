@@ -1,7 +1,12 @@
-body, html {
-	/*background-color: #fff;*/
-	
+html body {
+/*    overflow: hidden;
+*/
 }
+
+#fb-root {
+    position: absolute;
+}
+
 
 #header {
 	padding: 0px;
@@ -16,7 +21,7 @@ p {
 
 .content-container, .footer {
 	padding-right: 10em;
-	padding-left: 10em; 
+	padding-left: 10em;
 	padding-bottom: 5em;
 	width:100%;
 	background-color: #FFF;
@@ -24,16 +29,9 @@ p {
 	margin-right: 4em; */
 }
 
-/*
-#about-container, #artists_container {
-	background-color:  #fff;
-	padding-bottom: 5em;
-	
-}*/
-
 #header {
-	background: url('../imgs/headertentativa1.jpg') no-repeat center fixed;
-	background-size: inherit;
+	background: url('../imgs/rio_me_background.png') no-repeat center fixed;
+	background-size: 100% 100%;
 	min-height: 607px;
 }
 
@@ -60,16 +58,32 @@ p {
 
 .vote-btn {
 	margin-top: 10px;
-	background-color: #304630;
-	max-width: 200px;
+    background-color: #C3C3C3;
+/*	background-color: #dc7075; */
+	max-width: 100px;
 	height: 30px;
 	cursor: pointer;
-	border: 0px;
+	border: 2px solid #292929;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.vote-btn:hover {
-	background-color: #4D704D;
-	color:white;
+.vote-btn:hover{
+	background-color: #93AF93;
+}
+
+.vote-btn:active {
+	background-color: #568856;
+	color: #395939;
+}
+
+.vote-text {
+    color: #292929;
+    text-align: middle;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-block;
 }
 
 .artist-name {
@@ -87,7 +101,7 @@ img {
 	outline: 2px solid #292929;
 }
 
-.row {	
+.row {
 	display: block;
 	margin: 0 auto;
 }
@@ -100,8 +114,12 @@ img {
     color: #292929;
 }
 
-.col-title {
-	color: #304630;
+.title, .shirt-title {
+	color: #93AF93;
+}
+
+.shirt-title {
+    margin-bottom: 0.4em;
 }
 
 p {
@@ -116,4 +134,3 @@ p {
 .fixed-navbar-padding {
 	margin-top: 120px;
 }
-

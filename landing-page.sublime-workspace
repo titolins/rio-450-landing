@@ -4,8 +4,44 @@
 		"selected_items":
 		[
 			[
+				"orig",
+				"origOffsetYContact"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"vote",
+				"vote-btn"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
 				"margin",
-				"margin-top"
+				"margin-bottom"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"fixed",
+				"fixed_nav"
 			],
 			[
 				"min",
@@ -24,10 +60,6 @@
 				"text-decoration"
 			],
 			[
-				"ali",
-				"vertical-align"
-			],
-			[
 				"background",
 				"background-color"
 			],
@@ -40,10 +72,10 @@
 	"buffers":
 	[
 		{
-			"file": "assets/css/style_header_container.css",
+			"file": "assets/css/style_header.css",
 			"settings":
 			{
-				"buffer_size": 1607,
+				"buffer_size": 1462,
 				"line_ending": "Unix"
 			}
 		},
@@ -51,15 +83,7 @@
 			"file": "public/picture_header.html",
 			"settings":
 			{
-				"buffer_size": 13117,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/picture_header_container.html",
-			"settings":
-			{
-				"buffer_size": 13803,
+				"buffer_size": 12165,
 				"line_ending": "Unix"
 			}
 		}
@@ -88,15 +112,15 @@
 	},
 	"file_history":
 	[
+		"/home/snil/dev/landing-page/public/picture_header.html",
 		"/home/snil/dev/landing-page/public/picture_header_container.html",
+		"/home/snil/dev/landing-page/assets/css/style_header_container.css",
 		"/home/snil/dev/landing-page/public/picture_header_container_about.html",
 		"/home/snil/dev/landing-page/public/picture_header_about.html",
 		"/home/snil/dev/landing-page/public/picture_header_transparent.html",
-		"/home/snil/dev/landing-page/public/picture_header.html",
 		"/home/snil/dev/landing-page/public/picture_header_transparent_about.html",
 		"/home/snil/dev/landing-page/assets/css/style_header_transparent.css",
 		"/home/snil/dev/landing-page/assets/css/style_header.css",
-		"/home/snil/dev/landing-page/assets/css/style_header_container.css",
 		"/home/snil/dev/landing-page/assets/css/bootstrap-theme.css",
 		"/home/snil/dev/landing-page/assets/css/soon.css",
 		"/home/snil/dev/landing-page/assets/css/cover.css",
@@ -111,7 +135,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 		]
@@ -121,6 +145,76 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"        var artist_nav = $('#artists-navbar');\n        var origOffsetYArtist = artist_nav.offset().top;",
+			"artists-navbar",
+			"green",
+			"about-",
+			"artists_container",
+			"artists",
+			"artists-navbar",
+			"fixed-navbar",
+			"header",
+			"artists-nav",
+			"url",
+			"container",
+			"col",
+			"container-title",
+			"container",
+			"container-title",
+			"h2",
+			"/h2 class=\"container-title\"",
+			"h2",
+			"page-header",
+			"header",
+			"artist-header",
+			"-header",
+			"header",
+			"artist-header",
+			"artist-",
+			"fixed",
+			"h1",
+			"about-container",
+			"about_container",
+			"about",
+			"em",
+			"col-about",
+			"col-shirt",
+			"col-shi",
+			".row",
+			"navbar",
+			"url",
+			"#fixed",
+			"_paddin",
+			"about_container",
+			"button",
+			"outliner",
+			"h2",
+			"shirt",
+			"h2",
+			"#dc",
+			"h1",
+			"about",
+			"about_",
+			"about",
+			"container",
+			"artists_container",
+			"fixed-navbar",
+			"artistas",
+			"padding",
+			"#header",
+			"padding",
+			"<h1>",
+			"margin",
+			"padding",
+			"stick",
+			"url",
+			"about_arti",
+			"url",
+			"div id=\"nav	",
+			"div id=\"nav",
+			"<nav",
+			"data-s",
+			"nav",
 			"data-s",
 			"navbar",
 			"absolute",
@@ -141,6 +235,12 @@
 		"regex": false,
 		"replace_history":
 		[
+			"col-title",
+			"/h2",
+			"h2 class=\"container-title\"",
+			"about-container",
+			"col-3",
+			"col-about",
 			"data-toggle=\"lightbox\" data-title=\"teste\" data-gallery=\"shirts\"",
 			"class=\"fancybox-button\"",
 			"class=\"fancybox-thumb"
@@ -159,18 +259,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "assets/css/style_header_container.css",
+					"file": "assets/css/style_header.css",
 					"settings":
 					{
-						"buffer_size": 1607,
+						"buffer_size": 1462,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1450,
-								1450
+								1370,
+								1370
 							]
 						],
 						"settings":
@@ -179,7 +279,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1276.0,
+						"translation.y": 1255.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -189,15 +289,15 @@
 					"file": "public/picture_header.html",
 					"settings":
 					{
-						"buffer_size": 13117,
+						"buffer_size": 12165,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13004,
-								13004
+								11054,
+								11054
 							]
 						],
 						"settings":
@@ -207,35 +307,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4310.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "public/picture_header_container.html",
-					"settings":
-					{
-						"buffer_size": 13803,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13703,
-								13703
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4439.0,
+						"translation.y": 3794.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
