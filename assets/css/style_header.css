@@ -1,136 +1,307 @@
-html body {
-/*    overflow: hidden;
-*/
+
+
+/* 
+ * default page settings;
+ */
+
+body, html {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-#fb-root {
-    position: absolute;
-}
-
-
-#header {
-	padding: 0px;
-	margin:0px;
-}
-
-p {
-	text-align: justify;
-	text-justify: inter-word;
-	color: #fff;
-}
-
-.content-container, .footer {
-	padding-right: 10em;
-	padding-left: 10em;
-	padding-bottom: 5em;
-	width:100%;
-	background-color: #FFF;
-	/*margin-left:4em;
-	margin-right: 4em; */
-}
-
-#header {
-	background: url('../imgs/rio_me_background.png') no-repeat center fixed;
-	background-size: 100% 100%;
-	min-height: 607px;
-}
-
-
-.fixed-navbar	 {
-	background: url('../imgs/rio\ me\ header.jpg') no-repeat center fixed;
-	background-size:  cover;
-	height: 120px;
+#page {
+    background-color: #FFF;
 }
 
 /*
-.content-container h1 {
-		color: black;
-}*/
+ * timer settings
+ */
 
-.footer {
-	/*background-color:  #fff; */
+#timer-container {
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    top: 150px;
 }
 
-.col-shirt {
-	outline: 2px solid #292929;
-	padding: 5px;
+
+/*
+ * media queries
+ *
+ *
+ */
+
+
+/* Custom, iPhone Retina */ 
+@media only screen 
+    and (min-width : 320px) 
+    and (orientation: portrait) {
+    #header {
+        padding: 0px;
+        margin:0px;
+        background: url('../imgs/rio_me_background_portrait_2.png') no-repeat 
+                    center fixed;
+        background-size: 100% 100%;
+        min-height: 520px;
+    }
+    
+    textarea {
+        width: 10em;
+        height: 10em;
+    }
+    input {
+        width:120px;
+    }
+
 }
 
-.vote-btn {
-	margin-top: 10px;
+@media only screen 
+    and (min-width : 320px) 
+    and (orientation: landscape) {
+    #header {
+        padding: 0px;
+        margin:0px;
+        background: url('../imgs/rio_me_background.png') no-repeat 
+                    center fixed;
+        background-size: 100% 100%;
+        min-height: 300px;
+    }
+    textarea {
+        width: 15em;
+        height: 10em;
+    }
+    input {
+        width: 12em;
+    }
+    
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    #header {
+        padding: 0px;
+        margin:0px;
+        background: url('../imgs/rio_me_background.png') no-repeat center fixed;
+        background-size: 100% 100%;
+        min-height: 650px;
+    }
+    input {
+        width: 10em;
+    }
+    #contact-info {
+        border-right: 1px solid #2F2F2F;
+    }
+    textarea {
+        width: 22em;
+        height: 7em;
+    }
+
+}
+
+/* Large Devices, Wide
+* Screens */
+@media only screen and (min-width : 1200px) {
+    
+}
+
+/*
+ * navbar-fixed stuff
+ *
+ */
+#artists-navbar, .fixed-navbar, .navbar, .navbar-fixed-top {
+    background: url('../imgs/rio_me_background_nav_1.png') no-repeat 
+                center center fixed;
+    background-size:  auto auto;
+    height: 70px !important;
+    width: 100% !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    line-height: 70px;
+    vertical-align: middle;
+}
+
+.navbar, .navbar-fixed-top {
+    background-size: auto auto;
+    padding: 0 !important;
+    margin: 0 !important;
+    /*
+    position: absolute;
+    min-width: auto !important;
+    width: 100% !important;
+    position: fixed !important;
+    */
+}
+
+
+
+
+.navbar-title {
+    padding: 0%;
+    margin: 0%;
+    margin-left: 2%;
+}
+
+.fixed-navbar-padding {
+    margin-top: 70px;
+
+}
+
+.fixed-navbar h1 {
+    position: relative;
+    display: inline-block;
+    /*
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    */
+    margin-right: 5%;
+}
+
+
+/* 
+ * inputs
+ */
+
+input, textarea {
+    border: 2px solid #292929;
+    resize: none;
+}
+
+input {
+    margin-bottom: 10%;
+}
+
+
+/* 
+ * buttons settings
+ */
+
+.vote-btn, .send-btn {
+    display: block;
+    margin: auto;
+	margin-top: 3%;
     background-color: #C3C3C3;
-/*	background-color: #dc7075; */
-	max-width: 100px;
+	max-width: 150px;
 	height: 30px;
 	cursor: pointer;
 	border: 2px solid #292929;
     text-align: center;
-    vertical-align: middle;
 }
 
-.vote-btn:hover{
+.vote-btn:hover, .send-btn:hover {
 	background-color: #93AF93;
 }
 
-.vote-btn:active {
+.vote-btn:active, .send-btn:active {
 	background-color: #568856;
 	color: #395939;
 }
 
-.vote-text {
+.vote-text, .send-text {
     color: #292929;
-    text-align: middle;
-    vertical-align: middle;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     display: inline-block;
 }
 
-.artist-name {
-	max-width: 200px;
-}
-
-img {
-	width: 200px;
-	height: 200px;
+.fb-like {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    max-width: 100px;
 }
 
 
-.col-3 {
-	padding-bottom: 10px;
+
+/* 
+ * rows and columns
+ */
+
+.row-centered {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.col-outline {
+    display:inline block;
 	outline: 2px solid #292929;
+    margin-bottom: 5%;
+    vertical-align: middle;
+    text-align: center;
 }
 
-.row {
-	display: block;
-	margin: 0 auto;
-}
 
-.shirts-row {
-	margin-top: 80px;
+
+/*
+ * contents
+ */
+
+.shirt-img {
+    display: block;
+	width: 250px;
+	height: 250px;
+    margin: auto;
 }
 
 #about-container h1 {
     color: #292929;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.title, .shirt-title {
+#artists-container {
+    padding-top: 5%;
+}
+
+.content {
+    padding-bottom: 5%;
+}
+
+.col-title {
 	color: #93AF93;
 }
 
 .shirt-title {
-    margin-bottom: 0.4em;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
-p {
+.content-text {
     color: black;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
-.page_header {
-	padding: 0;
-	margin: 0;
+#copyright {
+    font-size: 14px;
 }
 
-.fixed-navbar-padding {
-	margin-top: 120px;
+hr {
+    border-color: #2F2F2F;
 }
+
+#footer-info {
+    margin-top: 2%;
+}
+
+#contact {
+    background-color: #292929;
+    padding-top: 5%;
+}
+
+

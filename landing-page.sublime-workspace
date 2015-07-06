@@ -75,7 +75,7 @@
 			"file": "assets/css/style_header.css",
 			"settings":
 			{
-				"buffer_size": 1462,
+				"buffer_size": 3977,
 				"line_ending": "Unix"
 			}
 		},
@@ -83,7 +83,7 @@
 			"file": "public/picture_header.html",
 			"settings":
 			{
-				"buffer_size": 12165,
+				"buffer_size": 21125,
 				"line_ending": "Unix"
 			}
 		}
@@ -135,7 +135,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -262,21 +262,22 @@
 					"file": "assets/css/style_header.css",
 					"settings":
 					{
-						"buffer_size": 1462,
+						"buffer_size": 3977,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1370,
-								1370
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 1255.0,
@@ -289,15 +290,15 @@
 					"file": "public/picture_header.html",
 					"settings":
 					{
-						"buffer_size": 12165,
+						"buffer_size": 21125,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11054,
-								11054
+								11095,
+								11095
 							]
 						],
 						"settings":
@@ -307,7 +308,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3794.0,
+						"translation.y": 1859.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

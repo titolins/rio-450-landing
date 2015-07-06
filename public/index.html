@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html> <!--lang="pt-br"> -->
 
 <head>
     <meta charset="utf-8"></meta>
@@ -18,7 +18,8 @@
 
     <!-- lightbox css -->
     <link href="../assets/css/ekko-lightbox.css" rel="stylesheet"></link>
-    
+    <link href="../assets/css/ekko-lightbox.min.css" rel="stylesheet"></link>
+
     <!-- counter site css -->
     <link href="../assets/css/soon.css" rel="stylesheet"></link>
 
@@ -34,13 +35,30 @@
 
  </head>
 
-<body>
-    <!-- Remove the class="container" statement so the components will have full width. This should be adapted however. I wish to keep the container and the full width -->
-    <div>
-    
+ <body>
+     <div id="fb-root"></div>
+     <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId   :   '864474466974209',
+                xfbml   :   true,
+                version :   'v2.3'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+     </script>
+
+
         <section id="header">
             <!--<div class="container">
-                <h1 class="animated GoIn" data-animated="GoIn" id="header">Rio<b>450</b></h1> 
+                <h1 class="animated GoIn" data-animated="GoIn" id="header">Rio<b>450</b></h1>
                 <div id="timer" class="animated FadeIn" data-animated="FadeIn">
                     <div id="days" class="timer_box">
                     </div>
@@ -50,237 +68,304 @@
                     </div>
                     <div id="seconds" class="timer_box">
                     </div>
-                </div> 
+                </div>
             </div> -->
         </section>
 
         <!-- Content -->
-    <div class="container content-container" id="about-container">
-        <h1>Sobre</h1>
-        <div class="row" id="about_text">
-            <div class="col-md-3 col-md-offset-1 col-3">
-                <h2 class="col-title">Rio me</h2>
-                <p>
-                     Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                 </p>
-            </div>
-            <div class="col-md-3 col-md-offset-1 col-3">
-                <h2 class="col-title">Rio 450</h2>
-                <p>
-                     Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                 </p>
-            </div>
-            <div class="col-md-3 col-md-offset-1 col-3">
-                <h2 class="col-title">Casa 20</h2>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-            </div>
-        </div>
-    </div>
-
-        <!-- regular about 
-        <div class="page-header">
+        <div class="container content-container" id="about-container">
             <h1>Sobre</h1>
-        </div>/title>
-     Core Boots
-        <h2 class="col-title">Rio 450</h2>
-        <p>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-        </p>
-        <h2 class="col-title">Rio me</h2>
-        <p>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-            </p>
-        <h2 class="col-title">Casa 20</h2>
-        <p>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-        </p>
-    </div>
-    -->
-    <div id="artists">
-        <div class="fixed-navbar" id="artists-navbar">
-            <div class="container">
-                <h1>Artistas participantes</h1>
+            <div class="row row-centered" id="about_text">
+                <div class="col-md-3 col-md-offset-1 col-3">
+                    <h2 class="title">Rio me</h2>
+                    <p>
+                        Donec id elit non mi porta gravida at eget metus. Fusce 
+                        dapibus, tellus ac cursus commodo, tortor mauris 
+                        condimentum nibh, ut fermentum massa justo sit amet 
+                        risus. Etiam porta sem malesuada magna mollis euismod. 
+                        Donec sed odio dui.
+                    </p>
+                </div>
+                <div class="col-md-3 col-md-offset-1 col-3">
+                    <h2 class="title">Rio 450</h2>
+                    <p>
+                        Donec id elit non mi porta gravida at eget metus. Fusce 
+                        dapibus, tellus ac cursus commodo, tortor mauris 
+                        condimentum nibh, ut fermentum massa justo sit amet 
+                        risus. Etiam porta sem malesuada magna mollis euismod. 
+                        Donec sed odio dui.
+                    </p>
+                </div>
+                <div class="col-md-3 col-md-offset-1 col-3">
+                    <h2 class="title">Casa 20</h2>
+                    <p>
+                        Donec id elit non mi porta gravida at eget metus. Fusce 
+                        dapibus, tellus ac cursus commodo, tortor mauris 
+                        condimentum nibh, ut fermentum massa justo sit amet 
+                        risus. Etiam porta sem malesuada magna mollis euismod. 
+                        Donec sed odio dui.
+                    </p>
+                </div>
             </div>
         </div>
-        
-        <div class="container content-container" id="artists-container">            
-            <div class="row shirts-row">   
-                <div class="col-md-3 col-md-offset-1 col-3">
-                    <h2 class="col-title">Joao</h2>
-                    <a href="#">
-                        <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
-                    </a>
-                    <div class="vote-btn"></div>
-                </div>
-                <div class="col-md-3 col-md-offset-1 col-3">
-                    <h2 class="col-title">Joao</h2>
-                    <a href="#">
-                        <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
-                    </a>
-                    <div class="vote-btn"></div>
-                </div>
-                <div class="col-md-3 col-md-offset-1 col-3">
-                    <h2 class="col-title">Joao</h2>
-                    <a href="#">
-                        <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
-                    </a>
-                    <div class="vote-btn"></div>
+        <div id="artists">
+            <div class="fixed-navbar" id="artists-navbar">
+                <div class="container">
+                    <h1>Artistas participantes</h1>
                 </div>
             </div>
-            <div class="row shirts-row">
-                <div class="col-md-3 col-md-offset-1 col-3">
-                    <h2 class="col-title">Joao</h2>
-                    <a href="#">
-                        <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
-                    </a>
-                    <div class="vote-btn"></div>
+
+            <div class="container content-container" id="artists-container">
+                <div class="row row-centered shirts-row">
+                    <div class="col-md-3 col-md-offset-1 col-3">
+                        <h2 class="shirt-title">Joao</h2>
+                        <a data-toggle="lightbox" data-gallery="shirts" 
+                            href="../assets/imgs/sunset.jpg" data-title="teste">
+                            <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg">
+                            </img>
+                        </a>
+                        <div class="vote-btn">
+                            <span class="vote-text">VOTAR</span>
+                        </div>
+                        <div class="fb-like"
+                        data-width="100"
+                        data-show-faces="true" 
+                        data-share="true"
+                        data-layout="standard"></div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-3">
+                        <h2 class="shirt-title">Joao</h2>
+                        <a data-toggle="lightbox" data-gallery="shirts" href="../assets/imgs/sunset.jpg" data-title="teste">
+                            <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
+                        </a>
+                        <div class="vote-btn">
+                            <span class="vote-text">VOTAR<span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-3">
+                        <h2 class="shirt-title">Joao</h2>
+                        <a data-toggle="lightbox" data-gallery="shirts" href="../assets/imgs/sunset.jpg" data-title="teste">
+                            <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
+                        </a>
+                        <div class="vote-btn">
+                            <span class="vote-text">VOTAR<span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-3">
-                    <h2 class="col-title">Joao</h2>
-                    <a href="#">
-                        <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
-                    </a>
-                    <div class="vote-btn"></div>
+                <div class="row row-centered shirts-row">
+                    <div class="col-md-3 col-md-offset-1 col-3">
+                        <h2 class="shirt-title">Joao</h2>
+                        <a data-toggle="lightbox" data-gallery="shirts" href="../assets/imgs/sunset.jpg" data-title="teste">
+                            <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
+                        </a>
+                        <div class="vote-btn">
+                            <span class="vote-text">VOTAR<span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-3">
+                        <h2 class="shirt-title">Joao</h2>
+                        <a data-toggle="lightbox" data-gallery="shirts" href="../assets/imgs/sunset.jpg" data-title="teste">
+                            <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
+                        </a>
+                        <div class="vote-btn">
+                            <span class="vote-text">VOTAR<span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-3">
+                        <h2 class="shirt-title">Joao</h2>
+                        <a data-toggle="lightbox" data-gallery="shirts" href="../assets/imgs/sunset.jpg" data-title="teste">
+                            <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
+                        </a>
+                        <div class="vote-btn">
+                            <span class="vote-text">VOTAR<span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-3">
-                    <h2 class="col-title">Joao</h2>
-                    <a href="#">
-                        <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
-                    </a>
-                    <div class="vote-btn"></div>
+                <div class="row row-centered shirts-row">
+                    <div class="col-md-3 col-md-offset-1 col-3">
+                        <h2 class="shirt-title">Joao</h2>
+                        <a data-toggle="lightbox" data-gallery="shirts" href="../assets/imgs/sunset.jpg" data-title="teste">
+                            <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
+                        </a>
+                        <div class="vote-btn">
+                            <span class="vote-text">VOTAR</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-3">
+                        <h2 class="shirt-title">Joao</h2>
+                        <a data-toggle="lightbox" data-gallery="shirts" href="../assets/imgs/sunset.jpg" data-title="teste">
+                            <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
+                        </a>
+                        <div class="vote-btn">
+                            <span class="vote-text">VOTAR<span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-3">
+                        <h2 class="shirt-title">Joao</h2>
+                        <a data-toggle="lightbox" data-gallery="shirts" href="../assets/imgs/sunset.jpg" data-title="teste">
+                            <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
+                        </a>
+                        <div class="vote-btn">
+                            <span class="vote-text">VOTAR<span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-centered shirts-row">
+                    <div class="col-md-3 col-md-offset-1 col-3">
+                        <h2 class="shirt-title">Joao</h2>
+                        <a data-toggle="lightbox" data-gallery="shirts" href="../assets/imgs/sunset.jpg" data-title="teste">
+                            <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
+                        </a>
+                        <div class="vote-btn">
+                            <span class="vote-text">VOTAR<span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-3">
+                        <h2 class="shirt-title">Joao</h2>
+                        <a data-toggle="lightbox" data-gallery="shirts" href="../assets/imgs/sunset.jpg" data-title="teste">
+                            <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
+                        </a>
+                        <div class="vote-btn">
+                            <span class="vote-text">VOTAR<span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 col-3">
+                        <h2 class="shirt-title">Joao</h2>
+                        <a data-toggle="lightbox" data-gallery="shirts" href="../assets/imgs/sunset.jpg" data-title="teste">
+                            <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
+                        </a>
+                        <div class="vote-btn">
+                            <span class="vote-text">VOTAR<span>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- closes the artists-container div -->
+        </div> <!-- closes the artists div -->
+
+        <div id="contact">
+            <div class="fixed-navbar" id="contact-navbar">
+                <div class="container">
+                    <h1>Contato</h1>
                 </div>
             </div>
-            <div class="row shirts-row">
-                <div class="col-md-3 col-md-offset-1 col-3">
-                    <h2 class="col-title">Joao</h2>
-                    <a href="#">
-                        <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
-                    </a>
-                    <div class="vote-btn"></div>
+
+            <div class="container content-container" id="contact-container">
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-1">
+                        <h2 class="title ">Nome</h2>
+                        <input type="text" maxlength="40" id="contact-name"></input>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <h2 class="title">Email</h2>
+                        <input type="text" maxlength="40" id="contact-email"></input>
+                    </div>
                 </div>
-                <div class="col-md-3 col-md-offset-1 col-3">
-                    <h2 class="col-title">Joao</h2>
-                    <a href="#">
-                        <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
-                    </a>
-                    <div class="vote-btn"></div>
-                </div>
-                <div class="col-md-3 col-md-offset-1 col-3">
-                    <h2 class="col-title">Joao</h2>
-                    <a href="#">
-                        <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
-                    </a>
-                    <div class="vote-btn"></div>
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-1">
+                        <h2 class="title">Mensagem</h2>
+                        <textarea rows="15" cols="50" id="contact-message"></textarea>
+                    </div>
                 </div>
             </div>
-            <div class="row shirts-row">
-                <div class="col-md-3 col-md-offset-1 col-3">
-                    <h2 class="col-title">Joao</h2>
-                    <a href="#">
-                        <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
-                    </a>
-                    <div class="vote-btn"></div>
-                </div>
-                <div class="col-md-3 col-md-offset-1 col-3">
-                    <h2 class="col-title">Joao</h2>
-                    <a href="#">
-                        <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
-                    </a>
-                    <div class="vote-btn"></div>
-                </div>
-                <div class="col-md-3 col-md-offset-1 col-3">
-                    <h2 class="col-title">Joao</h2>
-                    <a href="#">
-                        <img src="../assets/imgs/thumbnails/sunset_thumbnail.jpg" ></img>
-                    </a>
-                    <div class="vote-btn"></div>
-                </div>
-            </div>        
-        </div>
-    </div>
-    <div id="contact"> 
-        <div class="fixed-navbar" id="contact-navbar">
-            <div class="container">
-                <h1>Contato</h1>
-            </div>
-        </div>
 
-        <div class="container content-container" id="contact-container">
-
-        </div>
-    </div>
+        </div> <!-- closes the contact div -->
 
 
 
-<!-- Footer 
+<!-- Footer
         <footer class="footer">
             <p>Rio me&#xae; - 2015</p>
             <p>Casa20&#xae; - 2015</p>
         </footer> -->
 
-</div>
+    </div> <!-- closes page div -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../assets/js/bootstrap.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
 
-    <!-- counter site js -->
+
+    <!-- counter site js
     <script src="../assets/js/modernizr.custom.js" type="text/javascript"></script>
     <script src="../assets/js/soon/plugins.js"></script>
+     causing me errors with jquery (and considering i am not using it for now)
     <script src="../assets/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="../assets/js/soon/custom.js"></script>
 
+    <script src="../assets/js/soon/custom.js"></script>
+-->
     <!-- lightbox js -->
     <script src="../assets/js/ekko-lightbox.js" type="text/javascript"></script>
-
-    <script src="../assets/js/js-header.js" type="text/javascript"></script>
+    <script src="../assets/js/ekko-lightbox.min.js" type="text/javascript"></script>
 
     <script>
+    var artist_nav = $('#artists-navbar');
+    var contact_nav = $('#contact-navbar');
 
-        $(document).ready(function() {
+    var origOffsetYArtist = artist_nav.offset().top;
+    var origOffsetYContact = contact_nav.offset().top;
+    var windowSize = $(window.top).height();
 
-        var artist_nav = $('#artists-navbar');
-        var origOffsetYArtist = artist_nav.offset().top;
-
-//when i define the variables below, i break the artists-navbar variables above... funny..
-/*
-        var contact_nav = $('#contact-navbar');
-        var origOffsetYContact = contact_nav.offset().top();
-*/
-
-//================
-
-//get this done width
-
-//================
-  
-            $(window).scroll(function() {
- 
-                if ($(window).scrollTop() >= origOffsetYArtist) {
-                    $('#artists-navbar').addClass('navbar navbar-fixed-top');
-                    $('#artists-container').addClass('fixed-navbar-padding');
-                } else { //|| 
-                           //($(window).scrollTop() >= origOffsetYContact-$(window).height())) {
-                    $('#artists-navbar').removeClass('navbar navbar-fixed-top');
-                    $('#artists-container').removeClass('fixed-navbar-padding');
-                }/*
-                } else if ($(window).scrollTop() >= origOffsetYContact) {
-                    $('#contact-navbar').addClass('navbar navbar-fixed-top');
-                    $('#contact-container').addClass('fixed-navbar-padding');
-                }*/
+    $(document).ready(function() {
+        $.ajaxSetup({ cache: true });
+       /* $.getScript('https://connect.facebook.net/en_US/sdk.js', function() {
+                FB.init({
+                    appId: '864474466974209',
+                    version: 'v2.3'
+                });
+                $('#loginbutton,#feedbutton').removeAttr('disabled');
+                FB.getLoginStatus(updateStatusCallBack);
             });
+*/
+        
+        document.onscroll = scroll;
 
-            var artist_nav = $('#artists-navbar');
-            var origOffsetYArtist = artist_nav.offset().top;
+        var userIp = getIp();
 
+        
+    });
 
-            document.onscroll = scroll;
+    $(document).delegate('*[data-toggle="lightbox"]','click', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= origOffsetYContact) {
+            $('#contact-navbar').addClass('navbar navbar-fixed-top');
+            $('#contact-container').addClass('fixed-navbar-padding');
+        } else if ($(window).scrollTop() >= origOffsetYArtist) {
+            $('#artists-navbar').addClass('navbar navbar-fixed-top');
+            $('#artists-container').addClass('fixed-navbar-padding');
+            $('#contact-navbar').removeClass('navbar navbar-fixed-top');
+            $('#contact-container').removeClass('fixed-navbar-padding');
+        } else {
+            $('#artists-navbar').removeClass('navbar navbar-fixed-top');
+            $('#artists-container').removeClass('fixed-navbar-padding');
+        }
+    });
+
+    function getIp() {
+        $.getJSON("http://jsonip.com/?callback=?", function (data) {
+            return data.ip;
         });
-<!--
+    };
+    
     </script>
+
+
+    <div id="fb-root"></div>
+    <script>
+       (function(d, s, id) {
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) return;
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+           fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));</script>
+
+    
 </body>
 
 </html>
