@@ -16,13 +16,14 @@ imgPath = "assets/imgs/sunset.jpg"
 thumbnailPath = "assets/imgs/thumbnails/sunset_thumbnail.jpg"
 numberOfArtists = 12
 i = 1
+ip = "192.168.100.100"
 
 while (i <= 12):
     artist = Artist(name = name, website = website, about = about)
     session.add(artist)
     shirt = Shirt(thumbPath = thumbnailPath, imgPath = imgPath, artist_id = i)
     session.add(shirt)
-    vote = Vote(artist_id = i)
+    vote = Vote(ip = ip, artist_id = i)
     session.add(vote)
     i += 1
 

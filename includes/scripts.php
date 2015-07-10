@@ -106,9 +106,11 @@ type="text/javascript"></script>-->
                         data: { id: id,
                                 ip: ip },
                         success: function(response) {
-                                    console.log('debug: '+response);
+                                /*console.log('debug: '+response);*/
                                     response = JSON.parse(response);
-                                    alert(response.msg);
+                                    if (response.status === 'success') {
+                                        alert(response.msg);
+                                        }
                                     }
                     });
     };

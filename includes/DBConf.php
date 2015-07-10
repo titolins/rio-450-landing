@@ -6,7 +6,8 @@ define(PASS, "promo-450");
 define(DB, "rio450");
 define(SELECT_ARTISTS, "SELECT * FROM artist");
 define(GET_SHIRT, "SELECT * FROM shirt WHERE artist_id = ?");
-define(VOTE, "INSERT INTO vote (artist_id) VALUES (?)");
+define(VOTE, "INSERT INTO vote (ip, artist_id) VALUES (?, ?)");
+define(SELECT_VOTES, "SELECT * FROM vote");
 
 /*
 global $host = "rio450.mysql.uhserver.com";
