@@ -1,0 +1,16 @@
+
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from database_setup import Base, Artist, Shirt, Vote
+
+engine = create_engine('mysql+mysqldb://rio450:promo-450@rio450.mysql.uhserver.com/rio450')
+Base.metadata.bind=engine
+DBSession = sessionmaker(bind = engine)
+session = DBSession()
+
+
+# artistas
+### nome --> link
+### release(500)
+### lugar pra votos
+
