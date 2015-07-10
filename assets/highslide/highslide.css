@@ -264,12 +264,15 @@ html>/**/body .highslide-gallery ul img {
 }
 .highslide-controls .highslide-full-expand a {
 	background-position: -150px 0;
+    display: none;
 }
 .highslide-controls .highslide-full-expand a:hover {
 	background-position: -150px -30px;
+    display: none;
 }
 .highslide-controls .highslide-full-expand a.disabled {
 	background-position: -150px -60px !important;
+    display: none;
 }
 .highslide-controls .highslide-close a {
 	background-position: -180px 0;
@@ -886,4 +889,42 @@ html>/**/body .highslide-gallery ul img {
 }
 .highslide-thumbstrip-float .highslide-marker {
 	display: none;
+}
+
+
+
+
+
+/*
+ *
+ *
+ *
+ */
+
+
+/*
+@media only screen 
+    and (min-width : 320px) {
+    .highslide-controls .highslide-full-expand a {
+        display: none;
+    }
+    .highslide-controls .highslide-full-expand a:hover {
+        display: none;
+    }
+    .highslide-controls .highslide-full-expand a.disabled {
+        display: none;
+    }
+}*/
+
+@media only screen and (min-width : 992px) {
+    .highslide-controls .highslide-full-expand a {
+        display: inline;
+    }
+    .highslide-controls .highslide-full-expand a:hover {
+        display: inline;
+    }
+    .highslide-controls .highslide-full-expand a.disabled {
+        display: inline;
+    }
+
 }

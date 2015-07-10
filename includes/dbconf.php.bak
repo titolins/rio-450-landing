@@ -1,5 +1,6 @@
 <?php
 global $select_artists = "SELECT * FROM artist";
+global $get_votes = "SELECT COUNT(*) FROM vote WHERE artitst_id = 1";
 
 global $dbname = "rio450";
 

@@ -11,7 +11,6 @@
 <?php include __DIR__.'/includes/about.php'; ?>
 
 <?php include __DIR__.'/includes/artists.php'; ?>
-<?php makeArtists(); ?>
     </div> <!-- closes page div -->
 
 <?php include __DIR__.'/includes/footer.php'; ?>

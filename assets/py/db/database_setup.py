@@ -1,9 +1,12 @@
 import sys
 
-from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy import Column, ForeignKey, Integer, String, text
+from sqlalchemy.dialects.mysql import TIMESTAMP
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
+
+
 
 Base = declarative_base()
 
@@ -28,8 +31,8 @@ class Shirt(Base):
     __tablename__ = 'shirt'
 
     id = Column(Integer, primary_key = True)
-    thumbPath = Column(String(250))
-    imgPath = Column(String(250))
+    thumbPath = Column(String(250), nullable = False)
+    imgPath = Column(String(250), nullable = False)
     artist_id = Column(Integer, ForeignKey('artist.id'))
 
 
@@ -38,6 +41,8 @@ class Vote(Base):
     __tablename__ = 'vote'
 
     id = Column(Integer, primary_key = True)
+    ip = Column(String(15), nullable = False)
+    timestamp = Column(TIMESTAMP, server_default=text('CURRENT_TIMESTAMP'))
     artist_id = Column(Integer, ForeignKey('artist.id'))
 
 

@@ -19,15 +19,6 @@ body, html {
  * timer settings
  */
 
-#timer-container {
-    width: 100%;
-    vertical-align: middle;
-    text-align: center;
-    position: absolute;
-    top: 150px;
-}
-
-
 /*
  * media queries
  *
@@ -47,7 +38,7 @@ body, html {
         background-size: 100% 100%;
         min-height: 520px;
     }
-    
+
     textarea {
         width: 10em;
         height: 10em;
@@ -55,7 +46,13 @@ body, html {
     input {
         width:120px;
     }
-
+    #timer-container {
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+        position: absolute;
+        top: 150px;
+    }
 }
 
 @media only screen 
@@ -67,7 +64,7 @@ body, html {
         background: url('../imgs/rio_me_background.png') no-repeat 
                     center fixed;
         background-size: 100% 100%;
-        min-height: 300px;
+/*        min-height: 300px;*/
     }
     textarea {
         width: 15em;
@@ -76,17 +73,24 @@ body, html {
     input {
         width: 12em;
     }
-    
+    #timer-container {
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+        position: absolute;
+        /*top: 100px;*/
+        top: 0px;
+    }
 }
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones 
 @media only screen and (min-width : 480px) {
 
 }
 
-/* Small Devices, Tablets */
+/* Small Devices, Tablets 
 @media only screen and (min-width : 768px) {
 
-}
+}*/
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
@@ -107,14 +111,19 @@ body, html {
         width: 22em;
         height: 7em;
     }
-
+    #timer-container {
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+        position: absolute;
+        top: 150px;
+    }
 }
 
 /* Large Devices, Wide
-* Screens */
+* Screens 
 @media only screen and (min-width : 1200px) {
-    
-}
+}*/
 
 /*
  * navbar-fixed stuff
@@ -136,16 +145,7 @@ body, html {
     background-size: auto auto;
     padding: 0 !important;
     margin: 0 !important;
-    /*
-    position: absolute;
-    min-width: auto !important;
-    width: 100% !important;
-    position: fixed !important;
-    */
 }
-
-
-
 
 .navbar-title {
     padding: 0%;
@@ -161,14 +161,6 @@ body, html {
 .fixed-navbar h1 {
     position: relative;
     display: inline-block;
-    /*
-    top: 50%;
-    transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    */
     margin-right: 5%;
 }
 
@@ -226,7 +218,6 @@ input {
 }
 
 
-
 /* 
  * rows and columns
  */
@@ -244,7 +235,6 @@ input {
     vertical-align: middle;
     text-align: center;
 }
-
 
 
 /*
@@ -307,4 +297,5 @@ hr {
 .lightbox-title {
     color: black;
 }
+
 
